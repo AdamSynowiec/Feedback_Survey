@@ -1,0 +1,201 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    /* Margins */
+    margin: 0;
+    padding: 0;
+
+    /* Text */
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    color: #000;
+    font-weight: normal;
+
+    /* Sizing */
+    box-sizing: border-box;
+
+    /* Borders */
+    border: 0;
+}
+
+    :root {
+        --roboto-font: 'Roboto', sans-serif;
+    }
+
+    body {
+        background-color: #F4F9FF;
+    }
+
+/* container */
+
+    .container {
+        margin: 0 auto;
+        max-width: 808px;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+/* app */
+
+    .card-container {
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 60px 71px;
+        border-radius: 15px;
+        box-shadow: 0px 10px 0px 0px #eaf3ff;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .progress-counter {
+        font-family: var(--roboto-font);
+        color: #8192A6;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .progress-bar {
+        max-width: 164px;
+        height: 8px;
+        background-color: #E8F2FF;
+        border-radius: 10px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        padding: 2px;
+        margin-top: 14px;
+        margin-bottom: 30px;
+    }
+
+    .progress {
+        width: 39%;
+        background-color: #173961;
+        height: 4px;
+        border-radius: 10px;
+    }
+
+    .card-body {
+        width: 100%;
+    }
+
+    .card-title {
+        color: #000;
+        font-family: var(--roboto-font);
+        font-size: 22px;
+        font-weight: 600;
+        max-width: 327px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .step-list {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 52px;
+        max-width: 567px;
+        position: relative;
+    }
+
+    .step-list::before{
+        content: 'Totally disagree';
+        position: absolute;
+        left: -40px;
+        font-family: var(--roboto-font);
+        font-size: 14px;
+        color: #000;
+        font-weight: 500;
+        bottom: -24px;
+    }
+
+    .step-list::after{
+        content: 'Totally agree';
+        position: absolute;
+        right: -30px;
+        font-family: var(--roboto-font);
+        font-size: 14px;
+        color: #000;
+        font-weight: 500;
+        bottom: -24px;
+    }
+
+    .step-list > ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .step-list > ul::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #B5CFF1;
+        z-index: 0;
+    }
+
+    .step {
+        background-color: #fff;
+        min-width: 15px;
+        height: 15px;
+        border: 3px solid #B5CFF1;
+        border-radius: 50%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .step.active {
+        min-width: 25px;
+        height: 25px;
+        background-color: #000;
+        border: 5px solid #fff;
+        box-shadow: 0px 4px 5px #B5CFF1;
+    }
+
+    .card-footer {
+        padding-top: 24px
+    }
+
+    .button-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btn {
+        min-width: 144px;
+        height: 44px;
+        font-size: 16px;
+        font-family: var(--roboto-font);
+        font-weight: 400;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: opacity .2s ease;
+    }
+
+    .btn:hover {
+        opacity: 0.8;
+    }
+
+    .btn-prev {
+        background: #FFFFFF;
+        border: 1px solid #000000;
+    }
+
+    .btn-next {
+        background: #000000;
+        color: #fff;
+    }
